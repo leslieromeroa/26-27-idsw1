@@ -1,0 +1,21 @@
+@startuml
+hide circle
+hide empty members
+
+class FuenteDeLuz
+class Objeto
+class Sombra
+class Superficie
+class Observador
+class Percepcion
+
+' Rama Física: Generación de la sombra
+FuenteDeLuz -- Objeto
+Objeto -- Sombra
+Sombra -- Superficie
+
+' Rama Perceptiva: Experiencia del sujeto
+Sombra -- Percepcion
+Observador -- Percepcion
+
+@enduml
