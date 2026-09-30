@@ -1,15 +1,14 @@
 @startuml
-hide empty members
 
-class Persona
-class Comportamiento
-class Contexto
-class Percepcion
-class Simpatia
+rectangle Persona
+rectangle Comportamiento
+rectangle Contexto
+rectangle Percepcion
+rectangle Simpatia
 
-Persona --> Comportamiento 
+Persona --> Comportamiento
 Comportamiento --> Contexto
 Comportamiento --> Percepcion
-Percepcion --> Simpatia 
+Percepcion --> Simpatia
 
 @enduml
