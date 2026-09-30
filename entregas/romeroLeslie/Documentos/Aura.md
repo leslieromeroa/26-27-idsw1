@@ -11,4 +11,4 @@
 - Al momento de farmear la Persona que se desenvuelve como Actor no puede ser simultáneamente el Espectador que valida la acción.
 - Cada espectador emite una validación.
 - Debe de existir obligatoriamente un contexto para que se desarrolle una acción.
-- El concepto de aura como métrica incrementa y decrece dependiendo se su ejecición.
+- El concepto de aura como métrica incrementa y decrece dependiendo se su ejecución.
