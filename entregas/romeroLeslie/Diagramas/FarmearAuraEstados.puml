@@ -1,0 +1,11 @@
+@startuml
+[*] --> Creada : Iniciar Acción (requiere Contexto)
+
+Creada --> EnValidación : Ejecutar Acción (por el Actor)
+
+EnValidación --> AuraIncrementada : Validación Positiva (por Espectador)
+EnValidación --> AuraReducida : Validación Negativa (por Espectador)
+
+AuraIncrementada --> [*]
+AuraReducida --> [*]
+@startuml
