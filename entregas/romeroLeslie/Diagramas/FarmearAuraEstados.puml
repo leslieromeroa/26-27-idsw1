@@ -1,10 +1,14 @@
 @startuml
-[*] --> Creada : Iniciar Acción (requiere Contexto)
+[*] --> Creada : Iniciar Acción (en Contexto)
 
-Creada --> EnValidación : Ejecutar Acción (por el Actor)
+Creada --> Ejecutada : Ejecutar Acción (por Actor)
 
-EnValidación --> AuraIncrementada : Validación Positiva (por Espectador)
-EnValidación --> AuraReducida : Validación Negativa (por Espectador)
+Ejecutada --> Observada : Percibir Acción (por Espectador)
+
+Observada --> EnValidacion : Emitir Evaluación (por Espectador)
+
+EnValidacion --> AuraIncrementada : Voto Positivo [Espectador != Actor] / sumarAura()
+EnValidacion --> AuraReducida : Voto Negativo [Espectador != Actor] / restarAura()
 
 AuraIncrementada --> [*]
 AuraReducida --> [*]
