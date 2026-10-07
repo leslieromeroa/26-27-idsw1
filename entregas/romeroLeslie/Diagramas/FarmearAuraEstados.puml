@@ -3,9 +3,7 @@
 
 Creada --> Ejecutada : Ejecutar Acción (por Actor)
 
-Ejecutada --> Observada : Percibir Acción (por Espectador)
-
-Observada --> EnValidacion : Emitir Evaluación (por Espectador)
+Ejecutada --> EnValidacion : Observar Acción (por Espectador)
 
 EnValidacion --> AuraIncrementada : Voto Positivo [Espectador != Actor] / sumarAura()
 EnValidacion --> AuraReducida : Voto Negativo [Espectador != Actor] / restarAura()
